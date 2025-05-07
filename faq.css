@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  
+}
+.ansList{
+    background-color: white;
+    height: 50vh;
+    width: 50vw;
+    /* background-color: pink; */
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5%;
+}
+
+
+.container{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    text-align: start;
+}
+hr{
+    /* padding: 10px; */
+    margin: 10px;
+}
+

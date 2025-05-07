@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #292F36;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .navbar .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .navbar nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .navbar a, .dropbtn {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 120px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      top: 100%;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      color: white;
+      display: none;
+      cursor: pointer;
+    }
+
+
+    @media (max-width: 768px) {
+      .navbar nav {
+        display: none;
+        flex-direction: column;
+        background-color: #808080;
+        width: 100%;
+      }
+
+      .navbar nav.active {
+        display: flex;
+      }
+
+      .menu-icon {
+        display: block;
+      }
+    }
+
+    .content {
+      margin-top: 70px;
+      padding: 20px;
+    }
+    span{
+        color: rgb(147, 76, 76);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><span>nav</span>Gurukul</div>
+      <i class="fa-solid fa-bars menu-icon" id="menuToggle"></i>
+      <nav id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="rewardData.html">Campus Overview</a>
+        <a href="tophouse.html">Top Houses</a>
+        <a href="his.html">History</a>
+        <div class="dropdown">
+          <button class="dropbtn">Reward</button>
+          <div class="dropdown-content">
+            <a href="reward.html">Level1</a>
+            <a href="reward2.html">Level2</a>
+            <a href="reward3.html">Level3</a>
+          </div>
+        </div>
+        <a href="FAQ.html">FAQs</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <script>
+    const menuIcon = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuIcon.addEventListener('click', function() {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

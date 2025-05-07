@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reward Dashbord</title>
+    <link rel="stylesheet" href="rewardData.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+        <!-- navbar Section -->
+    <header>
+      <p class="logo"><img src="logo of NG.png" alt="" /></p>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="rewardData.html">Campus Overview</a>
+        <a href="tophouse.html">Top Houses</a>
+        <a href="his.html">History</a>
+        <a href="reward.html">Rewards</a>
+        <a href="FAQ.html">FAQS</a>
+      </nav>
+    </header>
+    <br>
+
+     <!-- input Section -->
+      
+    <div class="containerOne">
+      <div>
+        <h1>Enter Sheet URL</h1>
+        <input type="text" placeholder="Enter Your URL..." /><br>
+        <input type="text" placeholder="Enter Your URL..." /><br>
+        <button>Upload</button>
+      </div>
+      <div>
+        <div>
+            <h1>Filter Student Data</h1>
+            <select name="house" id="selectHouse">
+              <option value="1">select Houses</option>
+              <option value="2">Malhar House</option>
+              <option value="3">Bageshree House</option>
+              <option value="4">Bhairav House</option>
+            </select> <br>
+
+            <select name="campus" id="campusName">
+              <option value="a">Select Campus</option>
+              <option value="b">Jashpur Campus</option>
+              <option value="c">Dantewada Campus</option>
+              <option value="d">Kishanganj Campus</option>
+              <option value="e">Dharamshala Campus</option>
+              <option value="f">Pune Campus</option>
+              <option value="g">Raipur Campus</option>
+              <option value="h">Udaipur Campus</option>
+              <option value="i">Sarjapur Campus</option>
+              <option value="j">Himachal Campus</option>
+            </select><br>
+            <button class="filterBtn">Filter</button> 
+          </div>
+      </div>
+    </div>
+    <br />
+
+  <!-- Data Section -->
+
+    <div class="containerTwo">
+      <h1 id="head">Student Points Data</h1>
+      <table border="1" id="studentTable">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>House Name</th>
+            <th>Campus Name</th>
+            <th>Additional Effort(+1)</th>
+            <th>supporting peers in Academic(+2)</th>
+            <th>Supporting a Smaller Group in Learning(+3)</th>
+            <th>Support by Taking a Session for a Large Group(+4)</th>
+            <th>Total Academic Points</th>
+            <th>Additional Effort in Life Skills(+1)</th>
+            <th>Supporting Peer in Life Skills(+2)</th>
+            <th>Supporting the Community in Life Skills(+4)</th>
+            <th>Efforts to Learn English(+2)</th>
+            <th>Competition Winners(Group)(+5)</th>
+            <th>Council Activeness(+2)</th>
+            <th>Solving a Problem(+3)</th>
+            <th>Task Winners (individual)(+2)</th>
+            <th>Getting a Job(+15)</th>
+            <th>Total Culture Points</th>
+            <th>Total Academic and Culture</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <td colspan="3">Loading...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="rewardData.js"></script>
+  </body>
+</html>

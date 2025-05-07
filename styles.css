@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-image: url("campus photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: change 50s infinite ease-in-out;
+}
+
+.content {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 3em;
+}
+
+h1 span {
+  display: inline-block;
+  margin: 0 5px;
+  letter-spacing: 5px;
+}
+
+#first {
+  color: orangered;
+}
+
+@keyframes change {
+  0% {
+    background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*pGkJclH0BOA55umbo2hyhA.jpeg");
+  }
+
+  20% {
+    background-image: url("https://d3vrux30chabys.cloudfront.net/wp-content/uploads/2021/01/1_Nwc3BBvBWtw7jxB9eb63gg.jpeg");
+  }
+
+  40% {
+    background-image: url("https://college4u.in/wp-content/uploads/2016/12/37.jpg");
+  }
+
+  80% {
+    background-image: url("https://d3vrux30chabys.cloudfront.net/wp-content/uploads/2021/01/1_Nwc3BBvBWtw7jxB9eb63gg.jpeg");
+  }
+
+  100% {
+    background-image: url("https://miro.medium.com/v2/resize:fit:1600/1*Eab1ApFAVyFwCbogt7vgpA.jpeg");
+  }
+}
+
+
+header {
+  background-color: #292F36;
+  color: white;
+  padding: 25px 60px;
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+a:hover{
+  color: rgb(75, 141, 167);
+}
+img {
+  position: fixed;
+  height: 9em;
+  width: 10%;
+  bottom: 31em;
+}
+
+
+@media (max-width: 1618px) {
+  img {
+    position: fixed;
+    height: 7em;
+    width: 8%;
+    bottom: 27.5em;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("campus photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: change 50s infinite ease-in-out;
+  }
+}
+
+@media (max-width: 1202px) {
+  img {
+    position: fixed;
+    height: 7em;
+    width: 10%;
+    bottom: 27.5em;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("campus photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: change 50s infinite ease-in-out;
+  }
+}
+
+@media (max-width: 1104px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-icon + nav {
+    display: flex;
+  }
+
+  nav a {
+    padding: 10px 20px;
+  }
+
+  img {
+    position: fixed;
+    height: 7em;
+    width: 9%;
+    bottom: 35em;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("campus photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: change 50s infinite ease-in-out;
+  }
+}
+
+@media (max-width: 1440px) {
+  img {
+    position: fixed;
+    height: 7em;
+    width: 20%;
+    bottom: 27.5em;
+    left: 1px;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("campus photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: change 50s infinite ease-in-out;
+  }
+}
+
+@media (max-width: 1024px) {
+  img {
+    position: fixed;
+    height: 7em;
+    width: 20%;
+    bottom: 28em;
+    left: 1px;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("campus photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: change 50s infinite ease-in-out;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+    position: fixed;
+    height: 7em;
+    width: 20%;
+    bottom: 28em;
+    left: 1px;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("campus photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: change 50s infinite ease-in-out;
+  }
+}
+
+@media (max-width: 436px) {
+  img {
+    position: fixed;
+    height: 7em;
+    width: 25%;
+    bottom: 28em;
+    left: 1px;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("campus photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: change 50s infinite ease-in-out;
+  }
+}
+
+@media (max-width: 320px) {
+  img {
+    position: fixed;
+    height: 7em;
+    width: 31%;
+    bottom: 28em;
+    left: 1px;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url("campus photo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: change 50s infinite ease-in-out;
+  }
+  h1 span {
+    display: inline-block;
+    margin: 0 1px;
+    font-size: 0.5em;
+  }
+}
+
+
+
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}

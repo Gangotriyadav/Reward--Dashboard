@@ -1,0 +1,83 @@
+.containerOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 70px;
+    position: static;
+    padding: 2vh;
+}
+
+input {
+  height: 5vh;
+  width: 20vw;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+button {
+  margin-left: 3%;
+  height: 5vh;
+  width: 10vw;
+  border-radius: 5px;
+  background-color: #79aef2;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#head {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  word-spacing: 10px;
+  background-color: gainsboro;
+  display: inline-block;
+  height:10vh;
+  width: 100%;
+}
+
+select{
+    height: 5vh;
+    width: 20vw;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+
+table{
+    overflow-x: auto;
+    max-width: 100%;
+    display: block;
+}
+
+th{
+    background-color: gainsboro;
+    border: none;
+}
+a:hover{
+    color: #79aef2;
+}
+
+button:hover{
+    background-color:white;
+    border: 2px solid rgb(86, 156, 183);
+    color: rgb(86, 156, 183);
+}
+
+
+
+@media (max-width: 768) {
+    table{
+        font-size: 1.5vh;
+    }
+    th,td{
+        padding: 0.5vh;
+    }
+    .containerOne{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}

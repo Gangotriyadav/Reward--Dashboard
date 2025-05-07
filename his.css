@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+  }
+  
+  #History {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  #History h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .history {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: gray;
+    color: white;
+    padding: 15px 0;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  #top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  #top .month,
+  #top .campus,
+  #top .house,
+  #top .point {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  #top div h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #003366;
+    text-align: center;
+  }
+  
+  #top div > div {
+    padding: 8px;
+    margin: 4px 0;
+    background-color: #f0f8ff;
+    text-align: center;
+    border-radius: 4px;
+    color: #333;
+  }
+  
+  /* Optional: Add hover effect */
+  #top div > div:hover {
+    background-color: #dbeeff;
+    cursor: default;
+  }
+  
